@@ -1,0 +1,32 @@
+<h1>Produtos</h1> 
+
+<div class="painel">
+    <h2>Relatório de Vendas</h2>
+    <p>Quantidade de produtos vendidos: <span id="span_qtd">0</span></p>
+    <p>Valor de produtos vendidos: R$ <span  id="span_valor">0</span></p>
+    <p>Comissão esperada: R$ <span  id="span_comissao">0</span></p>
+
+</div>
+
+<div class="dados">
+    {{#each dados}}
+
+   <form action="/itens/post/{{this.id}}" method="post">
+        
+    <div class="pai">
+
+        <div class="nome">{{this.nome}}</div>
+        <div class="valor">R$ {{this.valor}}</div> 
+        <div class="qtd"> Estoque :<p id="{{this.id}}">0</p>/<span class="span_qtd">{{this.quantidade}}</span></div>
+        <div class="sub"><p onclick="sub({{this.valor}}, {{this.id}})">-</p></div> 
+        <div class="soma"><p class="btn_soma" onclick="soma({{this.valor}}, {{this.id}}, {{this.quantidade}})">+</p></div> 
+       <!--  <div class="btn-salvar"><input type="submit" value="Atualizar"></div> -->
+        <div class="btn-editar"><p><a href="/editar/{{this.id}}">Editar</a></p></div>
+        <div class="btn-excluir"><input type="submit" value="Excluir" class="excluir"></div>
+        
+    </div> 
+
+   </form>
+
+    {{/each}}
+</div>

@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-image: linear-gradient(90deg, white 60%, rgba(196, 18, 86, 0.37));
+}
+
+.navegacao{
+    width: 100%;
+    border: 2px solid rgb(233, 66, 191);
+}
+
+.navegacao ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-start;
+    
+}
+
+.navegacao ul li a{
+    text-decoration: none;
+    color: rgb(233, 66, 191);
+    font-size: 22px;
+    border: 1px solid rgb(252, 3, 156);
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navegacao ul li a:hover{
+background-color: rgb(233, 66, 191);
+color: white;
+}
+
+.navegacao ul li{
+list-style: none;
+margin-left: 100px;
+margin-right: 50px;
+padding: 10px;
+
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fomulario{
+
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 5px pink;
+}
+
+.fomulario div{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fomulario div label{
+    font-size: 18px;
+    
+}
+
+.fomulario div input{
+    width: 70%;
+    height: 25px;
+    padding: 5px;
+}
+
+#btn{
+    background-color: pink ;
+    font-size: 12px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+#btn:hover{
+    background-color: white;
+    color: rgb(233, 66, 191);
+    border: 2px solid rgb(233, 66, 191);
+    cursor: pointer;
+}
+
+.dados{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 30px;
+
+}
+
+.pai {
+    padding: 5px;
+    border-bottom: 2px solid rgb(233, 66, 191);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.excluir{
+    padding: 6px;
+    background-color: red;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.excluir:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+
+.nome{
+    width: 40%;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+
+.valor{
+    width: 15%;
+    margin-top: 7px;
+     
+}
+
+.qtd{
+    width: 20%;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 7px;
+}
+
+
+
+.btn-salvar{
+    width: 10%;
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.btn-salvar input{
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(0, 174, 255);
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+
+.btn-salvar input:hover{
+    color: rgb(0, 174, 255);
+    border: 1px solid rgb(0, 174, 255);
+    background-color: white;
+}
+
+.btn-excluir{
+    width: 10%;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.btn-editar{
+    width: 10%;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.btn-editar p {
+
+    border: 1px solid green;
+    background-color: green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.btn-editar p:hover{
+    background-color: white;
+}
+
+.btn-editar p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+
+}
+.btn-editar p a:hover{
+    color: green;
+}
+
+
+
+.soma{
+    width: 5%;
+}
+
+.soma p{
+    font-size: 25px;
+    color:green;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: 3px;
+}
+
+.sub{
+    width: 5%;
+}
+
+.sub p{
+    font-size: 25px;
+    color:rgb(233, 66, 191);
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+    padding: 0px;
+}
+
+.painel{
+    width: 40%;
+    height: 160px;
+    border: 3px solid rgb(252, 3, 156);
+    box-shadow: 0px 0px 7px 2px black;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.painel h2{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}
+
+.painel p{
+    margin: 10px;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.painel p span{
+    color: red;
+    margin-left: 2px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .navegacao ul li{
+        margin-left: 80px;
+        margin-right: 30px;
+        padding: 7px;
+        
+        }
+    
+    }
+    .painel{
+        width: 50%;
+    }
+
+    .dados{
+        width: 70%;
+    }
+    .pai{
+        width: 90%;
+    }
+
+
+@media (max-width: 750px) {
+    .painel{
+        width: 70%;
+    }
+
+    .dados{
+        width: 90%;
+    }
+    .pai{
+        width: 95%;
+    }
+}
+
+@media (max-width: 580px) {
+    .painel{
+        width: 80%;
+    }
+
+    .dados{
+        width: 95%;
+    }
+    .pai{
+        width: 99%;
+    }
+}
+
+@media (max-width: 532px) {
+
+    .navegacao ul li{
+        margin-left: 20px;
+        margin-right: 10px;
+        padding: 3px;
+        
+        }
+
+    .navegacao ul li a{
+        font-size: 15px;
+    }
+
+    .painel{
+        width: 80%;
+    }
+    .painel p {
+        font-size: 14px;
+    }
+
+    .dados{
+        width: 100%;
+    }
+    .pai{
+        width: 99%;
+    }
+    .excluir{
+        padding: 5px;
+    }
+    .btn-editar{
+        display: none;
+    }
+    .qtd{
+        font-size: 12px;
+    }
+    .nome{
+        font-size: 12px;
+    }
+    .valor{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 381px) {
+    .qtd{
+        font-size: 10px;
+    }
+    .nome{
+        font-size: 10px;
+    }
+    .valor{
+        font-size: 10px;
+    }
+}
+

@@ -1,0 +1,29 @@
+
+<h1>Editar Dados</h1>
+
+{{#each date}}
+
+<form action="/itens/editar/{{this.id}}" method="post" class="fomulario">
+
+<div>
+    <label for="produtos">Nome do Produto:</label> <br>
+    <input type="text" value="{{this.nome}}" name="nome" id="produtos">
+</div>
+
+<div>
+    <label for="valor">Valor:</label> <br>
+    <input type="text" name="valor" value="{{this.valor}}" id="valor">
+</div>
+
+<div>
+    <label for="quantidade">Quantidade:</label> <br>
+    <input type="number" name="quantidade" value="{{this.quantidade}}" id="quantidade">
+</div>
+
+    <input id="btn" type="submit" value="Editar">
+
+</form>
+
+
+
+{{/each}}
